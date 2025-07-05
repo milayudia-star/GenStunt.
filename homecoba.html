@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bebas Stunting Indonesia</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Fredoka', sans-serif;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    /* === Navbar === */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: white;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 20px;
+      color: rgb(121, 134, 255);
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+    }
+
+    .navbar ul li a.active,
+    .navbar ul li a:hover {
+      color: rgb(121, 134, 255);
+      font-weight: bold;
+    }
+
+    /* === Hero Section === */
+    .hero {
+      position: relative;
+      background: url('foto1.jpeg') no-repeat center center/cover;
+      height: 100vh;
+      width: 100%;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 120px 60px 60px 60px; /* ada ruang dari atas biar tak ketutup navbar */
+      color: white;
+    }
+
+    .overlay h1 {
+      font-size: 56px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .overlay p {
+      font-size: 17px;
+      max-width: 700px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .btn-outline {
+  background: transparent;
+  border: 2px solid rgb(121, 134, 255);
+  color: rgb(255, 255, 255);
+  padding: 10px 24px;
+  font-size: 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+  width: fit-content; /* ⬅️ Kunci utama agar tombol hanya selebar isi */
+  max-width: 250px;   /* ⬅️ Batas maksimum opsional */
+  white-space: nowrap; /* ⬅️ Cegah teks pindah ke bawah */
+}
+
+
+    .btn-outline:hover {
+      background: rgb(121, 134, 255);
+      color: white;
+    }
+
+    @media screen and (max-width: 768px) {
+      .overlay h1 {
+        font-size: 36px;
+      }
+
+      .overlay p {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- === Navbar === -->
+  <div class="navbar">
+    <div class="logo">GenStunt</div>
+    <ul>
+      <li><a href="homecoba.html" class="active">Home</a></li>
+      <li><a href="materi.html">Materi</a></li>
+      <li><a href="program.html">Program</a></li>
+      <li><a href="kontak.html">Hubungi Kami</a></li>
+  </ul>
+  </div>
+
+  <!-- === Hero Section === -->
+   <section class="hero" id="hero">
+    <div class="overlay">
+      <h1>GENSTUNT</h1>
+      <h2>Hallo GenRengers!</h2>
+      <p>
+       GenStunt merupakan singkatan dari Generasi Berencana Cegah Stunting, hadir sebagai sarana edukasi bagi remaja agar lebih paham dan peduli terhadap isu stunting.
+       Melalui platform ini, remaja diajak untuk mengenal apa itu stunting, pentingnya 1000 Hari Pertama Kehidupan (HPK),
+       serta bagaimana mereka bisa ambil peran dalam mencegahnya sejak dini. Muda, Peduli, Cegah Stunting Hari Ini!</p>
+       <h2>Salam GenRe!</h2>
+      </p>
+      <a href="materi.html" class="btn-outline">Lihat Selengkapnya</a>
+    </div>
+  </div>
+</section>
+
+  <!-- Visi Misi Section -->
+<section class="visi-misi-section">
+  <!-- Wave Atas -->
+  <div class="wave-shape"></div>
+
+  <!-- Wave SVG -->
+<div class="custom-shape-divider-top">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+       preserveAspectRatio="none">
+    <path d="M0,0V46.29c47.43,22,98.76,29,146.89,16.54C230.44,42,284.83,7.59,339.73,1.67c54.25-6,103.48,15.5,160.39,32.61,66.31,20.11,136.14,24.3,199.78,6.07,43.45-12.21,78.88-35.63,122.33-42.84,59.43-9.86,113.28,17.14,169.15,35.2V0Z"
+          opacity=".25" class="shape-fill"></path>
+    <path d="M0,0V15.81C47.42,38.29,98.75,45.29,146.88,32.83c83.55-20.83,137.94-55.24,192.84-61.16,54.25-6,103.48,15.5,160.39,32.61,66.31,20.11,136.14,24.3,199.78,6.07,43.45-12.21,78.88-35.63,122.33-42.84,59.43-9.86,113.28,17.14,169.15,35.2V0Z"
+          opacity=".5" class="shape-fill"></path>
+    <path d="M0,0V5.63C47.42,28.11,98.75,35.11,146.88,22.65,230.43,2.82,284.82-31.59,339.72-37.51c54.25-6,103.48,15.5,160.39,32.61,66.31,20.11,136.14,24.3,199.78,6.07,43.45-12.21,78.88-35.63,122.33-42.84,59.43-9.86,113.28,17.14,169.15,35.2V0Z"
+          class="shape-fill"></path>
+  </svg>
+</div>
+  <!-- Visi -->
+  <div class="visi-block">
+    <div class="visi-image">
+      <img src="fotovisi.jpeg" alt="Gambar Visi">
+    </div>
+    <div class="visi-text">
+      <h2>Visi</h2>
+      <hr />
+      <p><em>Mewujudkan Generasi Remaja yang Peduli, Tangguh, dan Berdaya dalam Mencegah Stunting 
+        Sejak Dini demi Terciptanya Generasi Emas Indonesia.
+
+</strong></em></p>
+    </div>
+  </div>
+
+  <!-- Misi -->
+  <div class="misi-block">
+    <div class="misi-text">
+      <h2>Misi</h2>
+      <hr />
+      <ul>
+        <li>Meningkatkan pengetahuan remaja tentang pentingnya gizi, kesehatan reproduksi, dan 1000 Hari Pertama Kehidupan (HPK) dalam mencegah stunting.</li>
+        <li>Membangun kesadaran remaja terhadap perannya sebagai calon orang tua yang sehat dan siap melahirkan generasi bebas stunting.</li>
+        <li>Mendorong keterlibatan aktif remaja dalam kampanye dan aksi nyata pencegahan stunting di lingkungan sekolah, keluarga, dan masyarakat.</li>
+        <li>Membangun jejaring kolaboratif antara remaja, lembaga pendidikan, penyuluh KB, dan instansi kesehatan untuk menciptakan program preventif berkelanjutan.</li>
+      </ul>
+    </div>
+    <div class="misi-image">
+      <img src="fotomisi.jpeg" alt="Gambar Misi">
+    </div>
+  </div>
+</section>
+
+  <div class="program-grid">
+    <div class="program-card">
+      <div class="icon">👤</div>
+      <h3>Kelas Edukasi Gizi</h3>
+      <p>Sosialisasi edukatif gizi seimbang untuk mencegah stunting</p>
+    </div>
+    <div class="program-card">
+      <div class="icon">➕</div>
+      <h3>Kampanye Remaja Peduli 1000 HPK</h3>
+      <p>Serta Penguatan Rujukan Fasilitas Kesehatan</p>
+    </div>
+    <div class="program-card">
+      <div class="icon">✏️</div>
+      <h3>Senam Sehat Cegah Stunting</h3>
+      <p>Pentingnya aktivitas fisik pendukung kesehatan dan gizi</p>
+    </div>
+    <div class="program-card">
+      <div class="icon">📄</div>
+      <h3>Gerakan Minum Tablet Tambah Darah (TTD)</h3>
+      <p>Untuk mencegah anemia sebagai faktor resiko stunting</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <h3>Generasi Berencana Cegah Stunting</h3>
+  <p>Pasaman Barat, Sumatra Barat, Indonesia</p>
+
+
+<script>
+  const hero = document.getElementById('hero');
+
+  const images = [
+    'fotobersama.jpeg',
+    'fotoshoot.jpeg',
+    'fotoberdua.jpeg',
+    'fotobersama2.jpeg'
+  ];
+
+  let current = 0;
+
+  function changeBackground() {
+    hero.style.backgroundImage = `url('${images[current]}')`;
+    current = (current + 1) % images.length;
+  }
+
+  setInterval(changeBackground, 3000); // Ganti tiap 5 detik
+  changeBackground(); // Panggil pertama kali
+</script>
+</body>
+</html>

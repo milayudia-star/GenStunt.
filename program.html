@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Program - GenStunt</title>
+  <link rel="stylesheet" href="program.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+
+</head>
+<script>
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll(".reveal");
+
+    reveals.forEach((element) => {
+      const windowHeight = window.innerHeight;
+      const elementTop = element.getBoundingClientRect().top;
+      const revealPoint = 100;
+
+      if (elementTop < windowHeight - revealPoint) {
+        element.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  window.addEventListener("load", revealOnScroll); // agar langsung muncul kalau sudah kelihatan
+</script>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+      <span>GenStunt</span>
+    </div>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="homecoba.html">Home</a></li>
+        <li><a href="materi.html">Materi</a></li>
+        <li><a href="program.html" class="active">Program</a></li>
+        <li><a href="kontak.html">Hubungi Kami</a></li>
+      </ul>
+    </nav>
+    <div class="login">
+      <a href="#">=</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="program-hero reveal">
+    <div class="hero-overlay">
+      <h1>Program</h1>
+    </div>
+  </section>
+
+  <!-- Program 1 -->
+  <section class="program-section reveal">
+    <div class="program-container reveal">
+      <div class="program-text reveal">
+        <h2>Kelas Edukasi Gizi</h2>
+        <ul>
+          <li>Sosialisasi edukatif 1000 HPK, makanan bergizi, pola hidup sehat, anemia, kebersihan reproduksi</li>
+          <li>Dengan tujuan meningkatkan kesadaran tentang pentingnya mencegah stunting sejak dini.</li>
+          <li>Bekerjasama dengan DPPKBP3A, IPKB dan TPA</li>
+        </ul>
+        
+      </div>
+      <div class="program-image">
+        <img src="tpa.jpeg" alt="Pelatihan Kesehatan">
+      </div>
+    </div>
+  </section>
+
+  <!-- Program 2 -->
+  <section class="program-highlight reveal">
+    <div class="program-highlight-container reveal">
+      <div class="highlight-text reveal">
+        <h2>Kampanye "Remaja Peduli 1000 HPK"</h2>
+        <ul>
+          <li>Aksi sosial atau digital yang menyuarakan pentingnya pencegahan stunting sejak remaja.</li>
+          <li>Menggunakan brosur, poster, media sosial, mengunjungi perkumpulan remaja dan lainnya.</li>
+          <li>Bekerjasama dengan PIK-R</li>
+        </ul>
+        
+      </div>
+      <div class="highlight-image">
+        <img src="kampanye.jpeg" alt="Pendampingan Anak">
+      </div>
+    </div>
+  </section>
+
+  <!-- Program 3 -->
+  <section class="program-highlight reveal">
+    <div class="program-highlight-container reveal">
+      <div class="highlight-text reveal">
+        <h2>Senam Sehat Cegah Stunting</h2>
+        <ul>
+          <li>Meningkatkan kesadaran remaja tentang pentingnya aktivitas fisik dalam mendukung kesehatan dan gizi.</li>
+          <li>Memberikan edukasi pencegahan stunting secara menyenangkan.</li>
+          <li>Membangun kolaborasi aktif antara remaja, masyarakat, DPPKBP3A, IPKB dalam upaya cegah stunting sejak remaja.</li>
+        </ul>
+        
+      </div>
+      <div class="highlight-image">
+        <img src="senam.jpeg" alt="Pendampingan Anak">
+      </div>
+    </div>
+  </section>
+
+  <!-- Program 4 -->
+  <section class="program-highlight reveal">
+    <div class="program-highlight-container reveal">
+      <div class="highlight-text reveal">
+        <h2>Gerakan Minum Tablet Tambah Darah (TTD)</h2>
+        <ul>
+          <li>Mengajak remaja putri minum TTD secara rutin setiap minggu di sekolah atau komunitas.</li>
+          <li>Tujuannya untuk mencegah anemia sebagai faktor risiko stunting pada bayi kelak.</li>
+          <li>Pendampingan Implementasi Strategi Akselerasi</li>
+          <li>Berkolaborasi dengan puskesmas dan sekolah.</li>
+        </ul>
+        
+      </div>
+      <div class="highlight-image">
+        <img src="ttd.jpeg" alt="Pendampingan Anak">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h3>Generasi Berencana Cegah Stunting</h3>
+    <p>Pasaman Barat, Sumatra Barat, Indonesia</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak</title>
+  <link rel="stylesheet" href="kontak.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+</head>
+
+<script>
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll(".reveal");
+
+    reveals.forEach((element) => {
+      const windowHeight = window.innerHeight;
+      const elementTop = element.getBoundingClientRect().top;
+      const revealPoint = 100;
+
+      if (elementTop < windowHeight - revealPoint) {
+        element.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  window.addEventListener("load", revealOnScroll); // agar langsung muncul kalau sudah kelihatan
+</script>
+
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Hubungi Kami</h1>
+  </section>
+
+  <!-- Konten Utama -->
+  <section class="kontak-container reveal">
+    <!-- Info Kontak -->
+    <div class="kontak-info">
+      <p><i class="fas fa-map-marker-alt"></i> Pasaman Barat, Sumatra Barat, Indonesia</p>
+      <p><i class="fas fa-phone"></i> -</p>
+      <p><i class="fab fa-instagram"></i> @genre_pasamanbarat</p>
+      <p><i class="fab fa-instagram"></i> @milayudiaa__</p>
+    </div>
+
+    <!-- Form Kontak -->
+    <div class="kontak-form">
+      <form>
+        <div class="form-row">
+          <input type="text" placeholder="Nama Depan" required>
+          <input type="text" placeholder="Nama Belakang" required>
+        </div>
+        <input type="email" placeholder="Email *" required>
+        <textarea rows="4" placeholder="Pesan" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
+
+<footer class="footer">
+  <h3>Generasi Berencana Cegah Stunting</h3>
+  <p>Pasaman Barat, Sumatra Barat, Indonesia</p>
+

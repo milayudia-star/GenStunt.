@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bebas Stunting Indonesia</title>
+  <link rel="stylesheet" href="materi.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+
+</head>
+<script>
+  window.addEventListener("load", function () {
+    const sections = document.querySelectorAll(
+      ".content, .stats-section, .about-stunting, .mitos-fakta, .ciri-stunting, .pencegahan-hamil, .dampak-stunting, .obesitas-anak, .pencegahan-obesitas"
+    );
+    
+    sections.forEach((section, index) => {
+      setTimeout(() => {
+        section.classList.add("appear");
+      }, index * 200); // animasi berurutan
+    });
+  });
+</script>
+
+<script>
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll(".reveal");
+
+    reveals.forEach((element) => {
+      const windowHeight = window.innerHeight;
+      const elementTop = element.getBoundingClientRect().top;
+      const revealPoint = 100;
+
+      if (elementTop < windowHeight - revealPoint) {
+        element.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  window.addEventListener("load", revealOnScroll); // agar langsung muncul kalau sudah kelihatan
+</script>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+      <span>GenStunt</span>
+    </div>
+    <nav class="nav-links">
+  <ul>
+    <li><a href="homecoba.html">Home</a></li>
+    <li><a href="materi.html" class="active">Materi</a></li>
+    <li><a href="program.html">Program</a></li>
+    <li><a href="kontak.html">Hubungi Kami</a></li>
+  </ul>
+</nav>
+
+    <div class="login">
+      <a href="#">=</a>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <section class="content reveal">
+    <section class="stats-section reveal"></section>
+    <div class="text reveal">
+      <h1>Apa itu <br>STUNTING?</h1>
+      <p>Stunting adalah  masalah  kurang  gizi  kronis  yang  disebabkan  oleh asupan gizi yang kurang dalam waktu cukup lama akibat pemberian 
+        makanan yang tidak sesuai dengan  kebutuhan  gizi. Stunting dapat  terjadi  mulai  janin  masih  dalam  kandungan  dan  baru nampak  saat  
+        anak  berusia  dua  tahun (Kementerian  Kesehatan  Republik  Indonesia,  2016). Stunting dan kekurangan gizi lainnya yang terjadi pada 1.000 HPK 
+        tidak hanya menyebabkan hambatan pertumbuhan fisik dan meningkatkan kerentanan terhadap penyakit, tetapi juga mengancam perkembangan kognitif yang 
+        akan berpengaruh pada tingkat kecerdasan saat ini dan produktivitas anak di masa dewasanya.
+      </p>
+    </div>
+    <div class="image">
+      <img src="fotostunting3.jpg" alt="Anak-anak">
+    </div>
+  </section>
+
+  
+
+</body>
+</html>
+
+<!-- Statistik Stunting -->
+<section class="stats-section reveal">
+  <div class="stats-card reveal">
+    <h2>Angka Stunting Hanya Turun 0,1 %</h2>
+    <p>Lihat data terbaru tentang persebaran stunting di berbagai wilayah Indonesia. Informasi ini membantu kita memahami tantangan dan mengambil langkah nyata untuk mengatasinya.</p>
+    
+    <div class="bar-chart">
+      <div class="bar" style="height: 90%;"><span>37.6%</span><label>2013</label></div>
+      <div class="bar" style="height: 75%;"><span>30.8%</span><label>2018</label></div>
+      <div class="bar" style="height: 68%;"><span>27.7%</span><label>2019</label></div>
+      <div class="bar" style="height: 60%;"><span>24.4%</span><label>2021</label></div>
+      <div class="bar" style="height: 50%;"><span>21.6%</span><label>2022</label></div>
+      <div class="bar" style="height: 49%;"><span>21.5%</span><label>2023</label></div>
+    </div>
+    <p class="source"><em>*Sumber: DATA KEMENKES 2023</em></p>
+  </div>
+
+  <div class="stats-card reveal">
+    <h2>1 dari 5 Anak Mengalami Stunting</h2>
+    <p>Stunting tidak hanya soal tinggi badan, tetapi juga kesehatan jangka panjang dan potensi anak. Data ini adalah panggilan untuk kita semua bertindak lebih baik.</p>
+
+    <div class="figure-icons">
+      <div class="figure faded"></div>
+      <div class="figure active"></div>
+      <div class="figure active"></div>
+      <div class="figure active"></div>
+      <div class="figure active"></div>
+    </div>
+
+    <p class="source"><em>*Sumber: MCAI, KEMENKES (PSG 2016), UNICEF</em></p>
+  </div>
+</section>
+<!-- Apa itu Stunting Section -->
+<section class="about-stunting reveal">
+  <div class="stunting-container">
+    <div class="stunting-image">
+      <img src="milabg.png" alt="Foto Mila">
+    </div>
+    <div class="stunting-text">
+      <h2>Peran Remaja Cegah <strong>Stunting</strong></h2>
+      <p>
+       Remaja berperan penting dalam mencegah stunting dengan menjadi agen edukasi, teladan pola hidup sehat, dan 
+       calon orang tua yang siap secara fisik serta mental untuk mendukung tumbuh kembang optimal anak sejak 1000 Hari Pertama Kehidupan.
+
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Mitos dan Fakta Stunting -->
+<section class="mitos-fakta reveal">
+  <h2>Mitos dan Fakta Stunting</h2>
+
+<div class="fakta-card reveal">
+    <img src="ibubg.png" alt="Anak Pendek">
+    <div class="fakta-text">
+      <h3>Faktor Keturunan</h3>
+      <p>Asupan gizi dan lingkungan paling berpengaruh dibandingkan 
+        faktor keturunan. Gizi ibu yang tidak tercukupi dengan baik sejak</p>
+      <p>pubertas, merencanakan kehamilan, saat hamil, dan saat menyusui berpengaruh terhadap stunting.</p>
+    </div>
+  </div>
+
+  <div class="fakta-card reveal">
+    <img src="anakmenangisbg.png" alt="Anak Pendek">
+    <div class="fakta-text">
+      <h3>Anak Pendek Pasti Stunting</h3>
+      <p>Faktanya tidak semua anak pendek mengalami stunting, tetapi perlu adanya evaluasi tumbuh kembang lebih lanjut.</p>
+    </div>
+  </div>
+
+  <div class="fakta-card reveal">
+    <img src="susubg.png" alt="Susu Formula">
+    <div class="fakta-text">
+      <h3>Susu Formula Pasti Stunting</h3>
+      <p>Faktanya, ASI eksklusif lebih direkomendasikan untuk mencegah stunting.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Ciri-Ciri Anak Stunting -->
+<section class="ciri-stunting reveal">
+  <h2>Ciri - Ciri Anak Stunting</h2>
+
+  <div class="ciri-container reveal">
+    <div class="ciri-card">
+      <img src="sedihbg.png" alt="Berat Badan Tidak Meningkat">
+      <h3>Berat Badan Tidak Meningkat</h3>
+      <p>
+        Ukur berat dan tinggi badan anak secara rutin ke Posyandu, dokter anak, atau ke Puskesmas sambil membawa KMS. Jika pengukuran berat dan tinggi badan anak tidak naik atau justru berkurang dan mencapai garis merah, hal ini bisa menjadi salah satu ciri-ciri anak stunting.
+      </p>
+    </div>
+
+    <div class="ciri-card reveal">
+      <img src="anakpr.png" alt="Perkembangan Otak Lambat">
+      <h3>Perkembangan Otak Lambat</h3>
+      <p>
+        Anak yang stunting tidak hanya mengalami gangguan pertumbuhan, tetapi juga masalah pada perkembangan otak. Hal ini karena kurangnya asupan nutrisi dalam jangka panjang yang dapat membuat tahap perkembangan otak anak terganggu.
+      </p>
+    </div>
+
+    <div class="ciri-card reveal">
+      <img src="sakit (2).png" alt="Mudah Sakit">
+      <h3>Mudah Sakit</h3>
+      <p>
+        Kurangnya asupan gizi membuat daya tahan tubuhnya lemah, sehingga ia akan lebih mudah jatuh sakit. Ini karena daya tahan tubuh yang lemah membuat tubuh lebih mudah terserang infeksi virus atau bakteri. Selain itu, ketika sakit, anak yang stunting juga biasanya membutuhkan waktu lebih lama untuk pulih.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Cara Mencegah Stunting Sejak Masa Kehamilan -->
+<section class="pencegahan-hamil reveal">
+  <div class="pencegahan-box reveal">
+    <h2>Cara Mencegah Stunting pada Anak sejak Masa Kehamilan</h2>
+    <div class="pencegahan-content">
+      <div class="pencegahan-left">
+        <div class="poin">
+          <h3><span>›</span> Penuhi Kebutuhan Nutrisi</h3>
+          <p>Pastikan Bumil mengonsumsi cukup karbohidrat, lemak, dan protein. Selain itu, perlu mengonsumsi makanan dan minuman yang kaya vitamin dan mineral, yakni zat besi, asam folat, kolin, magnesium, yodium, zinc, vitamin A, vitamin B, dan vitamin D.</p>
+        </div>
+        <div class="poin">
+          <h3><span>›</span> Lakukan Pemeriksaan Kandungan secara Rutin</h3>
+          <p>Pemeriksaan rutin selama kehamilan diperlukan untuk memantau tumbuh kembang janin dan mendeteksi apabila terdapat masalah pada janin atau kesehatan Bumil.</p>
+        </div>
+      </div>
+      <div class="pencegahan-img">
+        <img src="ibu.png" alt="Ibu Hamil">
+      </div>
+      <div class="pencegahan-right">
+        <div class="poin">
+          <h3><span>›</span> Terapkan Perilaku Hidup Bersih dan Sehat</h3>
+          <p>Infeksi bakteri, virus, atau parasit tertentu yang Bumil alami bisa meningkatkan risiko terjadinya stunting di kemudian hari atau bahkan masalah kesehatan lain yang lebih serius, seperti cacat bawaan lahir. Oleh karena itu, ingatlah untuk menjaga kebersihan dan berolahraga secara rutin.</p>
+        </div>
+        <div class="poin">
+          <h3><span>›</span> Hindari Paparan Asap Rokok</h3>
+          <p>Bumil juga harus berhenti merokok dan menghindari paparan asap rokok. Pasalnya, paparan asap rokok dapat meningkatkan risiko anak terlahir prematur, memiliki berat badan lahir rendah, hingga mengalami stunting.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dampak dan Akibat Stunting -->
+<section class="dampak-stunting reveal">
+  <h2>Dampak dan Akibat Stunting</h2>
+
+  <div class="dampak-card reveal">
+    <img src="pendek.png" alt="Tubuh Pendek">
+    <div class="dampak-text">
+      <h3>Memiliki tubuh pendek dan berat badan rendah</h3>
+      <p>Perawakan anak tampak kerdil saat mencapai usia 2 tahun atau lebih pendek dari anak-anak seusianya dengan jenis kelamin yang sama</p>
+    </div>
+  </div>
+
+  <div class="dampak-card">
+    <img src="child3.png" alt="Otak Terganggu">
+    <div class="dampak-text">
+      <h3>Perkembangan otak terganggu</h3>
+      <p>Menghambat proses belajarnya di kemudian hari</p>
+    </div>
+  </div>
+
+  <div class="dampak-card reveal">
+    <img src="boybg.png" alt="Sulit Sosialisasi">
+    <div class="dampak-text feveal">
+      <h3>Sulit Bersosialisasi</h3>
+      <p>Terganggunya kemampuan berbicara yang membuatnya sulit untuk berkomunikasi dan bersosialisasi</p>
+    </div>
+  </div>
+
+  <div class="dampak-card">
+    <img src="cool.png" alt="Mudah sakit">
+    <div class="dampak-text">
+      <h3>Mudah Sakit</h3>
+      <p>Terutama terkena penyakit infeksi seperti cacingan, pneumonia, dan tuberkulosis</p>
+    </div>
+  </div>
+
+  <div class="dampak-card">
+    <img src="girl.png" alt="Otak Terganggu">
+    <div class="dampak-text">
+      <h3>Berisiko mengidap berbagai penyakit</h3>
+      <p>Berisiko mengalami penyakit diabetes, hipertensi, dan obesitas ketika dewasa​</p>
+    </div>
+  </div>
+</section>
+
+<section class="dampak-stunting reveal">
+  <h2>Informasi</h2>
+
+  <div class="container reveal">
+    <div class="stat-box">
+      <h1>12%</h1>
+      <p>Anak di Indonesia mengalami obesitas</p>
+      <span class="sumber">*Sumber : Buku Riset Kesehatan Dasar 2013</span>
+    </div>
+    <div class="stat-box reveal">
+      <h1>41%</h1>
+      <p>Anak Indonesia termasuk obesitas dari seluruh ASEAN</p>
+      <span class="sumber">*Sumber : WHO, ILO</span>
+    </div>
+  </div>
+
+<section class="statistik-detail reveal">
+  <div class="detail-container reveal">
+    <!-- Berdasarkan Jenis Kelamin -->
+    <div class="detail-box reveal">
+      <h4>Berdasarkan Jenis Kelamin</h4>
+      <div class="angka">
+        <span class="persen">9,4%</span>
+        <span class="persen">6,6%</span>
+      </div>
+      <div class="label">
+        <span>Laki-laki</span>
+        <span>Perempuan</span>
+      </div>
+      <p class="sumber">*Sumber : Buku Riset Kesehatan Dasar 2013</p>
+    </div>
+
+    <!-- Berdasarkan Kelompok Umur -->
+    <div class="detail-box reveal">
+      <h4>Berdasarkan Kelompok Umur</h4>
+      <div class="bar-chart">
+        <div class="bar" style="height: 100px;"><span>18.8%</span><div>5–12 tahun</div></div>
+        <div class="bar" style="height: 60px;"><span>10.8%</span><div>13–15 tahun</div></div>
+        <div class="bar" style="height: 40px;"><span>7.3%</span><div>15–18 tahun</div></div>
+      </div>
+      <p class="sumber">*Sumber : Buku Riset Kesehatan Dasar 2013</p>
+    </div>
+
+    <!-- Berdasarkan Tempat Tinggal -->
+    <div class="detail-box reveal">
+      <h4>Berdasarkan Tempat Tinggal</h4>
+      <div class="angka">
+        <span class="persen">9,4%</span>
+        <span class="persen">6,6%</span>
+      </div>
+      <div class="label">
+        <span>Perkotaan</span>
+        <span>Pedesaan</span>
+      </div>
+      <p class="sumber">*Sumber : Buku Riset Kesehatan Dasar 2013</p>
+    </div>
+  </div>
+</section>
+
+<section class="obesitas-anak reveal">
+  <div class="container-obesitas">
+    <div class="gambar-anak">
+      <img src="gendut.png" alt="Anak makan pizza" />
+    </div>
+    <div class="teks-obesitas">
+      <h2>Obesitas Pada Anak</h2>
+      <p>
+        Kondisi ini terjadi jika berat badan anak jauh melebihi berat badan normal seusianya.
+        Obesitas pada anak bisa disebabkan oleh konsumsi makanan tidak sehat, jarang bergerak,
+        punya keluarga dengan riwayat obesitas, dan stres. <br><br>
+        Meski tampak menggemaskan, anak obesitas menghadapi risiko penyakit serius di kemudian hari,
+        seperti hipertensi, kolesterol tinggi, diabetes tipe 2, gangguan pernapasan, nyeri sendi,
+        dan gangguan tidur.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="pencegahan-obesitas reveal">
+  <h2 class="judul-pencegahan">Upaya Mencegah Obesitas</h2>
+  <div class="kotak-pencegahan reveal">
+    <div class="card-pencegahan">
+      <img src="saladbg.png" alt="Salad sehat" />
+      <p>Sediakan makanan sehat <br> dan bergizi seimbang</p>
+    </div>
+    <div class="card-pencegahan reveal">
+      <img src="bolabg.png" alt="Aktivitas fisik anak" />
+      <p>Biasakan anak aktif bergerak <br> dan perbanyak aktivitas fisik bersama keluarga</p>
+    </div>
+    <div class="card-pencegahan reveal">
+      <img src="tidur2.png" alt="Tidur cukup" />
+      <p>Pastikan anak cukup tidur</p>
+    </div>
+    <div class="card-pencegahan reveal">
+      <img src="hpbg.png" alt="Gamepad" />
+      <p>Batasi waktu bermain <br> gadget atau game</p>
+    </div>
+  </div>
+</section>
+
+  <div class="kotak-pencegahan reveal">
+    <div class="card-pencegahan">
+      <img src="jajan.png" alt="Camilan tinggi kalori" />
+      <p>Jangan memberikan camilan <br> dengan kandungan garam, <br> gula, dan kalori tinggi</p>
+    </div>
+    <div class="card-pencegahan reveal">
+      <img src="rsbg.png" alt="Dokter anak" />
+      <p>Periksakan anak ke dokter <br> secara berkala untuk menjalani <br> perhitungan indeks massa tubuh (IMT)</p>
+    </div>
+    <div class="card-pencegahan reveal">
+      <img src="family.png" alt="Keluarga" />
+      <p>Jadilah pendengar yang baik <br> agar anak tidak merasa stres</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <h3>Generasi Berencana Cegah Stunting</h3>
+  <p>Pasaman Barat, Sumatra Barat, Indonesia</p>
+
+
